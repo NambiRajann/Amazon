@@ -33,7 +33,7 @@ public class Test_Amazon {
 
 	@Test(priority = 0, enabled = true)
 	public void HomePage() {
-		homePage = new HomePage(driver);
+		HomePage homePage = new HomePage(driver);
 		homePage.verifyTitle();
 		homePage.selectCategory();
 
@@ -51,7 +51,7 @@ public class Test_Amazon {
 	@Test(priority = 2, enabled = true)
 	@Parameters("product")
 	public void addToCart(String prodct) throws InterruptedException {
-		addToCartPage = new AddtoCartPage(driver);
+		AddtoCartPage addToCartPage = new AddtoCartPage(driver);
 		addToCartPage.addToCart(prodct);
 		Thread.sleep(3000);
 		addToCartPage.verifyItemAdded();
