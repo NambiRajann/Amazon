@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+	<test name="Test">
+		<parameter name="product" value="Samsung Galaxy S25 5G AI" />
+		<classes>
+
+			<class name="com.testCases.Test_Amazon">
+
+
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite>
