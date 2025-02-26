@@ -1,18 +1,12 @@
 package com.testCases;
 
 import java.util.concurrent.TimeUnit;
-
-import javax.xml.stream.XMLStreamException;
-
-import org.checkerframework.common.reflection.qual.NewInstance;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import com.beust.jcommander.Parameter;
 import com.pages.AddtoCartPage;
 import com.pages.HomePage;
 import com.pages.SearchPage;
@@ -26,7 +20,7 @@ public class Test_Amazon {
 
 	@BeforeSuite
 	public void launchwebsite() {
-		
+
 		driver = new ChromeDriver();
 
 		// open website
@@ -66,7 +60,7 @@ public class Test_Amazon {
 	@AfterSuite
 	public void CloseChrome() {
 
-		 driver.quit();
+		driver.quit();
 	}
 
 }
